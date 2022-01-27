@@ -13,6 +13,7 @@
 
 import click
 
+
 @click.group()
 def marc21converter():
     """marc21converter commands."""
@@ -30,6 +31,6 @@ def marc21converter():
 )
 def tojson(file):
     """Create number of fake records for demo purposes."""
-    click.secho("Creating demo records...", fg="blue")
+    click.secho("Converting record...", fg="blue")
 
-    click.secho("Created records!", fg="green")
+    click.secho("Successfully converted record!", fg="green")

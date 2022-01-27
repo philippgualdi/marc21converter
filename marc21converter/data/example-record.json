@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "leader": "00000nam a2200000zca4500",
+    "control": {
+      "001": "990079940640203331",
+      "007": "cr",
+      "008": "100504|1932",
+      "009": "AC08088803"
+    },
+    "fields": {
+      "020": {
+        "indicator1": "_",
+        "indicator2": "_",
+        "subfield": {
+          "a": "3-902465-46-8"
+        }
+      },
+      "100": {
+        "indicator1": "1",
+        "indicator2": "_",
+        "subfield": {
+          "u": "Institute of Solid State Physics (5130)"
+        }
+      },
+      "245": {
+        "indicator1": "0",
+        "indicator2": "0",
+        "subfield": {
+          "a": "Proceedings of the 3rd International Brain-Computer Interface Workshop and Training Course",
+          "b": "Subtitle field",
+          "c": "hrsg. von Josef Frank"
+        }
+      },
+      "264": {
+        "indicator1": "_",
+        "indicator2": "_",
+        "subfields": [
+          {
+            "a": "TU Graz"
+          },
+          {
+            "b": "Hulk"
+          },
+          {
+            "b": "Thor"
+          },
+          {
+            "b": "Captain"
+          },
+          {
+            "b": "Black Widow"
+          },
+          {
+            "c": "2004"
+          }
+        ]
+      },
+      "300": {
+        "indicator1": "_",
+        "indicator2": "_",
+        "subfields": [
+          {
+            "a": "2.000.000"
+          }
+        ]
+      },
+      "650": {
+        "indicator1": "_",
+        "indicator2": "4",
+        "subfields": [
+          {
+            "g": "Invenio"
+          },
+          {
+            "g": "TUGraz"
+          },
+          {
+            "a": "Marc21"
+          }
+        ]
+      }
+    }
+  }
+}
