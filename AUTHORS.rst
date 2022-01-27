@@ -7,6 +7,6 @@
 Authors
 =======
 
-Marc21 datamodel
+Marc21 dataconverter
 
 - Philipp Gualdi
