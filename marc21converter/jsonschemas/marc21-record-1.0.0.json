@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "local://marc21/marc21-v1.0.0.json",
+  "title": "MARC 21 Format for Bibliographic Data.",
+  "description": "MARC 21 Format for Bibliographic Data.",
+  "url": "local://marc21/marc21-v1.0.0.json",
+  "additionalProperties": false,
+
+  "properties": {
+    "leader": {
+      "type": "string",
+      "additionalProperties": false,
+      "description": "Leader field values."
+    },
+    "fields": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "001": {
+          "type": "string",
+          "label": "Control Number 001"
+        },
+        "003": {
+          "type": "string",
+          "label": "Control Number Identifier"
+        },
+        "005": {
+          "type": "string",
+          "label": "Date and Time of Latest Transaction"
+        },
+        "006": {
+          "type": "string",
+          "label": "Additional Material Characteristics"
+        },
+        "007": {
+          "type": "string",
+          "label": "Physical Description"
+        },
+        "008": {
+          "type": "string",
+          "label": "General Information"
+        },
+        "245": {
+          "type": "object",
+          "label": "Title Statement",
+          "properties": {
+            "indicator1": {
+              "type": "string",
+              "label": "Title added entry",
+              "enum": ["0", "1"]
+            },
+            "indicator2": {
+              "type": "string",
+              "label": "Nonfiling characters",
+              "enum": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+            },
+            "subfields": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "^[a-h|k|n|p|s|6|8]$": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -40,6 +40,7 @@ setup_requires = [
 
 install_requires = [
     "lxml>=4.6.2",
+    "jsonschema>=4.2.0",
 ]
 
 packages = find_packages()

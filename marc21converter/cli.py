@@ -38,4 +38,17 @@ def tojson(file):
     import json
 
     print(json.dumps(output, indent=2))
+    validate(output)
     click.secho("Successfully converted record!", fg="green")
+
+
+def validate(input):
+    import json
+    from jsonschema import validate
+    from os.path import join, dirname
+
+    with open(
+        join(dirname(__file__), "jsonschemas/marc21-record-1.0.0.json"), "rb"
+    ) as fp:
+        schema = json.load(fp)
+    validate(instance=input, schema=schema)
