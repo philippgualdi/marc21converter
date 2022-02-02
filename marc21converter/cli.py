@@ -12,25 +12,30 @@
 
 
 import click
+from .tojson import create_record, Converter
 
 
 @click.group()
-def marc21converter():
+def cli():
     """marc21converter commands."""
     pass
 
 
-@marc21converter.command("tojson")
+@cli.command("tojson")
 @click.option(
     "--file",
     "-f",
     default="data/example-record.xml",
     show_default=True,
-    type=str,
+    type=click.File("r"),
     help="Relative path to file",
 )
 def tojson(file):
     """Create number of fake records for demo purposes."""
     click.secho("Converting record...", fg="blue")
+    output = Converter().do(create_record(file.read()))
 
+    import json
+
+    print(json.dumps(output, indent=2))
     click.secho("Successfully converted record!", fg="green")

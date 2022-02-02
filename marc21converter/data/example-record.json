@@ -1,13 +1,11 @@
 {
   "metadata": {
     "leader": "00000nam a2200000zca4500",
-    "control": {
+    "fields": {
       "001": "990079940640203331",
       "007": "cr",
       "008": "100504|1932",
-      "009": "AC08088803"
-    },
-    "fields": {
+      "009": "AC08088803",
       "020": {
         "indicator1": "_",
         "indicator2": "_",
@@ -64,21 +62,35 @@
           }
         ]
       },
-      "650": {
-        "indicator1": "_",
-        "indicator2": "4",
-        "subfields": [
-          {
-            "g": "Invenio"
-          },
-          {
-            "g": "TUGraz"
-          },
-          {
-            "a": "Marc21"
-          }
-        ]
-      }
+      "650": [
+        {
+          "indicator1": "_",
+          "indicator2": "4",
+          "subfields": [
+            {
+              "g": "Invenio"
+            }
+          ]
+        },
+        {
+          "indicator1": "_",
+          "indicator2": "4",
+          "subfields": [
+            {
+              "g": "TUGraz"
+            }
+          ]
+        },
+        {
+          "indicator1": "_",
+          "indicator2": "4",
+          "subfields": [
+            {
+              "a": "Marc21"
+            }
+          ]
+        }
+      ]
     }
   }
 }

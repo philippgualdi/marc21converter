@@ -10,6 +10,10 @@
 
 from __future__ import absolute_import, print_function
 
-from .utils import __version__
+from .converter import Converter
+from .utils import create_record
 
-__all__ = ("__version__",)
+__all__ = (
+    "Converter",
+    "create_record",
+)

@@ -17,8 +17,7 @@ from setuptools import find_packages, setup
 readme = open("README.rst").read()
 history = open("CHANGES.rst").read()
 
-tests_require = [
-]
+tests_require = []
 
 
 extras_require = {
@@ -67,8 +66,8 @@ setup(
     include_package_data=True,
     platforms="any",
     entry_points={
-        "flask.commands": [
-            "marc21converter = marc21converter.cli",
+        "console_scripts": [
+            "marc21converter = marc21converter.cli:cli",
         ],
     },
     extras_require=extras_require,
